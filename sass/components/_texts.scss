@@ -1,0 +1,39 @@
+.texts {
+  padding: 120px 0 70px;
+  background-color: $color-accent;
+
+  @media screen and (min-width: $screen-sm) {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding-top: 170px;
+    padding-bottom: 70px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__column {
+    width: 100%;
+
+    @media screen and (min-width: $screen-sm) {
+      width: 48%;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 45%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+  }
+}

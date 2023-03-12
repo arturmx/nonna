@@ -1,0 +1,149 @@
+.footer {
+  background-color: $color-accent;
+  margin: auto;
+  padding-top: 120px;
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: 170px;
+  }
+
+  @media screen and (min-width: $screen-xxl) {
+    width: 2000px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $screen-xl) {
+      margin: auto;
+      width: 1060px;
+      max-width: 100%;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    font-family: 'Steelfish', 'MavenPro', sans-serif;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 21px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+      flex-shrink: 0;
+      margin-bottom: 2rem;
+    }
+
+    // &:hover {
+    //   &:before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 260px;
+    //     height: 260px;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     border: solid 2px $color-black;
+    //     border-radius: 50%;
+    //     display: none;
+
+    //     @media screen and (min-width: $screen-md) {
+    //       display: block;
+    //     }
+    //   }
+    // }
+  }
+
+  &__column-texts {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__heading {
+    font-family: 'Steelfish', 'MavenPro', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__line {
+    margin-bottom: 5px;
+  }
+
+  &__bottom {
+    font-size: 14px;
+
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom-part {
+    padding: 10px 0;
+    flex-shrink: 0;
+    text-align: center;
+
+    @media screen and (min-width: $screen-sm) {
+      padding: 70px 0;
+      width: 33.333%;
+      text-align: initial;
+    }
+
+    &--social {
+      justify-self: center;
+
+      .social__item {
+        path {
+          fill: $color-black;
+        }
+
+        &:hover {
+          path {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &--copyright {
+      text-align: center;
+
+      @media screen and (min-width: $screen-sm) {
+        text-align: right;
+      }
+    }
+  }
+}

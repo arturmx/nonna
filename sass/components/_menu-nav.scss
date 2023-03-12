@@ -1,0 +1,21 @@
+.menu-nav {
+  &__item {
+    font-family: 'Steelfish', 'MavenPro', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    @media screen and (min-width: $screen-sm) {
+      font-size: 21px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 25px;
+    }
+
+    a {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

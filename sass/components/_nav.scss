@@ -1,0 +1,18 @@
+.nav {
+  color: $color-accent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    margin: 0 10px;
+
+    &--home {
+      display: none;
+
+      @media screen and (min-width: $screen-sm) {
+        display: block;
+      }
+    }
+  }
+}

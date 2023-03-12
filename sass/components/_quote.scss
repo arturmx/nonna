@@ -1,0 +1,26 @@
+.quote {
+  padding: 70px 0;
+  text-align: center;
+  background-color: $color-accent;
+
+  @media screen and (min-width: $screen-sm) {
+    padding-bottom: 170px;
+  }
+
+  &__sign {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 1.95;
+
+    @media screen and (min-width: $screen-xl) {
+        font-size: 28px;
+    }
+  }
+}

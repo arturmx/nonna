@@ -1,0 +1,1 @@
+<section class="image" data-src="<?php the_field('image2'); ?>"></section>

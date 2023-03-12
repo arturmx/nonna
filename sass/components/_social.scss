@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    margin: 0 10px;
+    display: none;
+
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      path {
+        fill: $color-black;
+      }
+    }
+  }
+}

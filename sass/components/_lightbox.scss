@@ -1,0 +1,104 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  display: none;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__img-wrapper {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    align-items: center;
+    padding: 20px 20px 60px;
+    position: relative;
+    user-select: none;
+
+    @media screen and (min-width: $screen-sm) {
+      height: calc(100vh - 140px);
+      padding: 30px;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $screen-sm) {
+      padding: 0 70px;
+    }
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &__arrow {
+    border: solid 1px $color-black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-black;
+
+      path {
+        fill: $color-accent;
+      }
+    }
+
+    &--close {
+      align-self: flex-start;
+      position: relative;
+      z-index: 1;
+      margin: auto;
+
+      &:hover {
+        path {
+          stroke: $color-accent;
+        }
+      }
+    }
+
+    &--prev {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+
+      @media screen and (min-width: $screen-sm) {
+        margin-bottom: 100px;
+        top: 50%;
+        bottom: auto;
+      }
+    }
+
+    &--next {
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      transform: scaleX(-1);
+
+      @media screen and (min-width: $screen-sm) {
+        margin-bottom: 100px;
+        top: 50%;
+        bottom: auto;
+      }
+    }
+  }
+}
