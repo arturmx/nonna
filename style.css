@@ -954,6 +954,9 @@ h3 {
 .footer__bottom-part--social {
   justify-self: center;
 }
+.footer__bottom-part--social a {
+  color: black;
+}
 .footer__bottom-part--social .social__item path {
   fill: #000;
 }

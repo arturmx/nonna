@@ -125,6 +125,10 @@
     &--social {
       justify-self: center;
 
+      a {
+        color: black;
+      }
+
       .social__item {
         path {
           fill: $color-black;
